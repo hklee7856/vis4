@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hailey - Number Adder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header DIV -->
+  <header class="header">
+    <h1>Hailey's Number Adder</h1>
+    <h4>Item 1</h4>
+    <h4>Item 2</h4>
+    <h4>Item 3</h4>
+  </header>
+
+  <!-- Two-column layout: Sidebar + Main Content -->
+  <div class="page">
+    <!-- Sidebar DIV -->
+    <aside class="sidebar">
+      <h3>Result</h3>
+      <!-- Start empty on purpose -->
+      <p id="resultId"></p>
+    </aside>
+
+    <!-- Main-content DIV -->
+    <main class="main-content">
+      <h3>Control Center</h3>
+      <div class="controls">
+        <button id="btnMinus2" aria-label="minus two">-2</button>
+        <button id="btnMinus1" aria-label="minus one">-1</button>
+        <button id="btnReset" aria-label="reset to zero">Reset</button>
+        <button id="btnPlus1" aria-label="plus one">+1</button>
+        <button id="btnPlus2" aria-label="plus two">+2</button>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Start total at 0 (not shown until a button is clicked)
+    var total = 0;
+
+    // -2 button
+    document.getElementById("btnMinus2").addEventListener("click", function () {
+      total = total - 2;
+      document.querySelector("#resultId").innerHTML = total;
+    });
+
+    // -1 button
+    document.getElementById("btnMinus1").addEventListener("click", function () {
+      total = total - 1;
+      document.querySelector("#resultId").innerHTML = total;
+    });
+
+    // Reset button
+    document.getElementById("btnReset").addEventListener("click", function () {
+      total = 0;
+      document.querySelector("#resultId").innerHTML = total;
+    });
+
+    // +1 button
+    document.getElementById("btnPlus1").addEventListener("click", function () {
+      total = total + 1;
+      document.querySelector("#resultId").innerHTML = total;
+    });
+
+    // +2 button
+    document.getElementById("btnPlus2").addEventListener("click", function () {
+      total = total + 2;
+      document.querySelector("#resultId").innerHTML = total;
+    });
+  </script>
+</body>
+</html>
