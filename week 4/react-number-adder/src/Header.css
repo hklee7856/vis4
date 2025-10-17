@@ -1,0 +1,44 @@
+#header {
+  display: flex;
+  align-items: baseline;
+  gap: 48px;
+  padding: 64px 48px;
+  border-bottom: 1px solid #eaeaea;
+  background: #333;
+  color: white;
+}
+
+#header h1 {
+  margin: 0;
+  font-weight: 200;
+  font-size: 20px;
+  flex: 1;
+  min-width: 300px;
+  color: white;
+}
+
+.header-items {
+  display: flex;
+  flex: 2;
+  justify-content: space-around;
+}
+
+.header-items h4 {
+  margin: 0;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .header-items h4:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .header-items h4:nth-child(2) {
+    display: none;
+  }
+}

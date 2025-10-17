@@ -1,0 +1,39 @@
+.controls {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 16px auto;
+}
+
+.controls button {
+  padding: 14px 18px;
+  border-radius: 50px;
+  border: none;
+  background: #D9D9D9;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: #bfbfbf;
+}
+
+#btnClearAll {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 100px;
+  font-size: 16px;
+  font-weight: 800;
+  color: #333;
+  background: #FFAE00;
+  cursor: pointer;
+}
+
+#btnClearAll:hover {
+  background: #e69c00;
+}
